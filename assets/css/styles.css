@@ -57,7 +57,6 @@
 
   /* Interaction */
   --color-focus: #1B4D3C;              /* overridden to sage on dark surfaces */
-  --color-hover-surface: #EDF1EC;
   --color-disabled-bg: #EDEBE3;
   --color-disabled-text: #9A9E97;
 
@@ -73,11 +72,6 @@
   /* Type */
   --font: 'Vazirmatn', Tahoma, Arial, sans-serif;
   --container: 1160px;
-
-  /* Legacy aliases kept so existing markup keeps working */
-  --gold: var(--color-brand-primary);
-  --gold-light: var(--color-brand-primary);
-  --line: var(--color-line);
 }
 
 * { box-sizing: border-box; }
@@ -305,7 +299,8 @@ input:focus-visible {
 }
 .service-number {
   position: absolute; left: 22px; top: 18px;
-  color: var(--color-text-muted); font-size: 11px; direction: ltr;
+  color: var(--color-text-secondary); font-size: 11px; direction: ltr;
+  font-variant-numeric: tabular-nums;
 }
 .service-icon {
   width: 38px; height: 38px; display: grid; place-items: center;
@@ -318,7 +313,7 @@ input:focus-visible {
 .service-card p { color: var(--color-text-secondary); font-size: 12px; line-height: 2; margin: 0 0 17px; min-height: 48px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; direction: ltr; justify-content: flex-end; }
 .tags span {
-  font-size: 9px; color: var(--color-text-on-tint);
+  font-size: 10px; color: var(--color-text-on-tint);
   background: var(--color-brand-tint);
   border: 1px solid var(--color-brand-tint-strong);
   padding: 2px 7px; border-radius: 2px;
@@ -426,17 +421,17 @@ input:focus-visible {
 .avatar-3, .avatar-5 { background: radial-gradient(circle at 35% 25%, var(--color-surface), var(--color-brand-tint-strong) 70%); }
 .member-info h3 { font-size: 16px; font-weight: 700; margin: 0 0 2px; color: var(--color-text-primary); }
 .member-role {
-  font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 0.15px;
+  font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 0.15px;
   color: var(--color-brand-secondary); text-align: right; margin-bottom: 11px;
 }
-.member-info p { font-size: 11px; color: var(--color-text-secondary); line-height: 2; margin: 0; min-height: 44px; }
+.member-info p { font-size: 12px; color: var(--color-text-secondary); line-height: 1.95; margin: 0; min-height: 44px; }
 .member-tags {
   display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; padding-top: 12px;
   border-top: 1px solid var(--color-line);
   direction: ltr; justify-content: flex-start;
 }
 .member-tags span {
-  font-family: Arial, sans-serif; font-size: 9px; color: var(--color-text-on-tint);
+  font-family: Arial, sans-serif; font-size: 10px; color: var(--color-text-on-tint);
   background: var(--color-brand-tint);
   border: 1px solid var(--color-brand-tint-strong);
   padding: 4px 7px; border-radius: 2px;
@@ -454,7 +449,7 @@ input:focus-visible {
   display: grid; place-items: center;
   color: var(--color-bronze-ink); font: 11px Arial, sans-serif;
 }
-.team-footnote p { font-size: 10px; line-height: 1.9; color: var(--color-text-secondary); margin: 0; }
+.team-footnote p { font-size: 11px; line-height: 1.9; color: var(--color-text-secondary); margin: 0; }
 
 /* ============================================================
    PROCESS — ivory, sequence carried by number + hairline
