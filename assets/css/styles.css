@@ -41,7 +41,6 @@
   /* Accents */
   --color-accent-sage: #9DBFAA;
   --color-accent-champagne: #B49A70;
-  --color-bronze-ink: #8A6F45;         /* bronze text safe on white */
 
   /* Lines */
   --color-line: #E2DFD5;
@@ -437,19 +436,6 @@ input:focus-visible {
   padding: 4px 7px; border-radius: 2px;
 }
 .team-empty { text-align: center; color: var(--color-text-secondary); padding: 30px; }
-.team-footnote {
-  display: flex; align-items: flex-start; gap: 10px; margin-top: 22px;
-  padding: 13px 15px;
-  border: 1px solid var(--color-line-strong);
-  background: var(--color-surface);
-}
-.footnote-mark {
-  flex: 0 0 18px; width: 18px; height: 18px;
-  border: 1px solid var(--color-accent-champagne); border-radius: 50%;
-  display: grid; place-items: center;
-  color: var(--color-bronze-ink); font: 11px Arial, sans-serif;
-}
-.team-footnote p { font-size: 11px; line-height: 1.9; color: var(--color-text-secondary); margin: 0; }
 
 /* ============================================================
    PROCESS — ivory, sequence carried by number + hairline
